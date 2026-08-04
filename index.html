@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0069)http://127.0.0.1:5500/School%20Management%20System3/gaming/index.html -->
+<!-- saved from url=(0075)file:///C:/Users/HC/Desktop/School%20Management%20System3/gaming/index.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -630,7 +630,7 @@
 <body>
 
     <!-- 1. LOGIN OVERLAY POPUP -->
-    <div class="login-overlay hidden" id="loginOverlay">
+    <div class="login-overlay" id="loginOverlay">
         <div class="login-card" id="loginCard">
             <h2>SHERDIL <span>AUTH</span></h2>
             <p>Enter credentials to access System Toolkit</p>
@@ -650,7 +650,7 @@
                         <i class="fa-solid fa-lock field-icon"></i>
                         <input type="password" id="password" placeholder="Enter password..." required="">
                         <!-- EYE ICON BUTTON -->
-                        <i class="fa-solid toggle-password fa-eye" id="togglePassword"></i>
+                        <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i>
                     </div>
                 </div>
 
@@ -673,10 +673,10 @@
 
                 <nav class="sidebar-nav">
                     <ul id="navLinks">
-                        <li class="active"><a href="http://127.0.0.1:5500/School%20Management%20System3/gaming/index.html#dashboard"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
-                        <li><a href="http://127.0.0.1:5500/School%20Management%20System3/gaming/index.html#downloads"><i class="fa-solid fa-toolbox"></i> Game Tools</a></li>
-                        <li><a href="http://127.0.0.1:5500/School%20Management%20System3/gaming/index.html#downloads"><i class="fa-solid fa-download"></i> Downloads</a></li>
-                        <li><a href="http://127.0.0.1:5500/School%20Management%20System3/gaming/index.html#analytics"><i class="fa-solid fa-microchip"></i> Performance</a></li>
+                        <li class="active"><a href="file:///C:/Users/HC/Desktop/School%20Management%20System3/gaming/index.html#dashboard"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+                        <li><a href="file:///C:/Users/HC/Desktop/School%20Management%20System3/gaming/index.html#downloads"><i class="fa-solid fa-toolbox"></i> Game Tools</a></li>
+                        <li><a href="file:///C:/Users/HC/Desktop/School%20Management%20System3/gaming/index.html#downloads"><i class="fa-solid fa-download"></i> Downloads</a></li>
+                        <li><a href="file:///C:/Users/HC/Desktop/School%20Management%20System3/gaming/index.html#analytics"><i class="fa-solid fa-microchip"></i> Performance</a></li>
                     </ul>
                 </nav>
             </div>
@@ -690,7 +690,7 @@
                 <div class="user-profile">
                     <div class="avatar"><i class="fa-solid fa-user-ninja"></i></div>
                     <div class="user-info">
-                        <h4 id="userProfileName">SHERDIL</h4>
+                        <h4 id="userProfileName">SHERDIL OPERATOR</h4>
                         <span class="status-badge"><span class="pulse"></span> System Online</span>
                     </div>
                 </div>
@@ -736,7 +736,7 @@
                         <div class="metric-icon cyan"><i class="fa-solid fa-microchip"></i></div>
                         <div class="metric-data">
                             <h3>CPU Load</h3>
-                            <div class="value" id="cpuValue">21%</div>
+                            <div class="value" id="cpuValue">22%</div>
                         </div>
                     </div>
                     <div class="metric-card">
@@ -847,9 +847,9 @@
     </div>
 
     <!-- NOTIFICATION TOAST -->
-    <div id="notification-toast" class="" style="border-color: rgb(0, 229, 255);">
+    <div id="notification-toast">
         <i class="fa-solid fa-circle-check" id="toastIcon" style="color: #00e5ff;"></i>
-        <span id="toast-message">Login Successful! Access Granted.</span>
+        <span id="toast-message">System parameter updated</span>
     </div>
 
     <script>
@@ -1034,43 +1034,5 @@
 
         });
     </script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 
 </body></html>
